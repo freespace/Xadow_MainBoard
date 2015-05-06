@@ -107,6 +107,8 @@ class Sleep {
     //Interrupt Sleep Function: Sleep till something interrupts sleep
     void sleepInterrupt(int interrupt,int mode);
 
+    void setSleepMode(int mode);
+
     private:
 
     int sleepMode_;
@@ -117,7 +119,6 @@ class Sleep {
     int sleepCycleCount;
     int sleepCycleInterval;
 
-    void setSleepMode(int mode);
     void WDT_Off();
     void WDT_On(byte psMask);
     int sleepWDT(unsigned long remainTime,boolean &abortCycle);
