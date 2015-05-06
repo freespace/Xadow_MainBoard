@@ -40,6 +40,7 @@ public:
     float getBatVol();                                  // read voltage of battery
     unsigned char getChrgState();                       // get charge state: 
     void pwrDown(unsigned long tSleep);                 // power down, tSleep ms
+    void goToSleep(uint8_t sleepmode, unsigned long tSleep); // go into sleep mode for tSleep ms
     void wakeUp();                                      // wake up
     void greenLed(unsigned char state);                 // green Led drive
     void redLed(unsigned char state);                   // red led drive
